@@ -1,0 +1,25 @@
+{{define "navbar"}}
+<!-- floating navbar static -->
+<div class="hidden lg:block flex flex-row px-8 py-4 fixed top-0 left-0 z-50">
+  <a href="/" class="font-display text-2xl tracking-tight mx-4
+           {{if eq .active "home"}}text-purple-500{{end}}
+    ">todo.runeco.de</a>
+  <a href="/" class="font-display text-2xl tracking-tight mx-4
+           {{if eq .active "login"}}text-purple-500{{end}}
+    ">Login</a>
+  <a href="/" class="font-display text-2xl tracking-tight mx-4
+           {{if eq .active "signup"}}text-purple-500{{end}}
+    ">Sign Up</a>
+</div>
+<div class="lg:hidden w-screen flex flex-col md:flex-row px-8 py-4 fixed top-0 left-0 z-50 justify-center items-center">
+  <a href="/" class="font-display text-2xl tracking-tight mx-4
+           {{if eq .active "home"}}text-purple-500{{end}}
+    ">todo.runeco.de</a>
+  <a href="/" class="font-display text-2xl tracking-tight mx-4
+           {{if eq .active "login"}}text-purple-500{{end}}
+    ">Login</a>
+  <a href="/" class="font-display text-2xl tracking-tight mx-4
+           {{if eq .active "signup"}}text-purple-500{{end}}
+    ">Sign Up</a>
+</div>
+{{end}}

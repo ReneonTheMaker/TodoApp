@@ -2,17 +2,17 @@
 <html lang="en">
 {{template "head" .}}
 <body class="bg-gray-100 text-gray-900">
-  <!-- tailwind css -->
-  <div class="bg-white shadow shadow-md h-screen flex flex-col items-center justify-center grid lg:grid-cols-2 gap-8">
-    <div class="flex flex-col items-center justify-center text-center px-4">
+  {{template "navbar" (dict "active" "home")}}
+  <div class="bg-gray-100 shadow shadow-md h-screen flex flex-col items-center justify-center grid lg:grid-cols-2 gap-8">
+    <div class="flex flex-col items-start justify-center text-center px-16">
       <h1 class="font-display text-4xl font-semibold tracking-tight mb-6">todo.runeco.de</h1>
-      <div class="font-serif flex flex-col items-center">
+      <div class="font-serif flex flex-col items-start">
         <p class="text-gray-500 leading-relaxed mb-6">A simple todo application built with Go and Tailwind CSS.</p>
-        <a href="/login" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Sign In</a>
+        <a href="/login" class="bg-purple-600 text-white px-6 py-2 rounded-md font-medium shadow hover:bg-purple-700 transition">Sign In</a>
       </div>
     </div>
-    <div class="h-full w-full hidden lg:block">
-      <img src="/static/img/splashimg.webp" alt="Todo App Screenshot" class="h-full w-auto object-cover">
+    <div class="h-full w-full hidden lg:block overflow-hidden">
+      <img src="/static/img/todochan.webp" alt="Todo App Screenshot" class="h-full w-full object-cover">
     </div>
   </div>
 </body>
